@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wettervorhersage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button type="submit">Search</button>
+        </form>
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="error-message" class="hidden">City not found.</div>
+        <div id="weather-display" class="hidden">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <h1 id="temperature"></h1>
+            <p id="weather-description"></p>
+            <div class="details">
+                <div>
+                    <p>Feels Like</p>
+                    <p id="feels-like"></p>
+                </div>
+                <div>
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div>
+                    <p>Wind Speed</p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
